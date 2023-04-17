@@ -1,5 +1,5 @@
 export const globalConstants = {
-    API_URL: 'http://3.91.196.67:3005/',
+    API_URL: 'http://localhost:3005/',
 }
 
 export const authConstants = {

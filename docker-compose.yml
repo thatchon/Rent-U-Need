@@ -1,5 +1,20 @@
-version: '3.3'
+# version: '3.3'
 
+# services:
+
+#   frontend:
+#     build: ./All/frontend
+#     image: thatchon/webfrontend:1.0
+#     ports:
+#       - "3000:3000"
+
+#   backend:
+#     build: ./All/backend
+#     image: thatchon/webbackend:1.0
+#     ports:
+#       - "3005:3005"
+
+version: '3'
 services:
 
   frontend:
@@ -10,6 +25,8 @@ services:
 
   backend:
     build: ./All/backend
-    image: thatchon/webbackend:1.0
     ports:
-      - "3005:3000"
+      - "3005:3005"
+    volumes:
+      - ./All/backend/db/db.json:/app/db/db.json
+    command: json-server --watch ./db/db.json --host 0.0.0.0 --port 3005

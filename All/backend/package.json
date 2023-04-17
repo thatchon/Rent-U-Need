@@ -17,11 +17,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "json-server --watch ./db/db.json --port 3005",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "start-json:server": "json-server --watch ./db/db.json --port 3005"
+    "start-json:server": "json-server --watch ./db/db.json"
   },
   "browserslist": {
     "production": [

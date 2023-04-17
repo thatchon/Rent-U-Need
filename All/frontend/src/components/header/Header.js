@@ -1,7 +1,4 @@
 // import Navbar from "react-bootstrap/NavBar";
-import Nav from "react-bootstrap/Nav";
-import Container from "react-bootstrap/Container";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link, useNavigate } from "react-router-dom";
 import { Fragment } from "react";
 import { getUser, logout } from "../../services/auth-service";
