@@ -30,7 +30,7 @@ export default function Header(props) {
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <Link class="navbar-brand" to="/">
-            Rent U Need
+            Rent U Need 2
           </Link>
           <button
             class="navbar-toggler"
